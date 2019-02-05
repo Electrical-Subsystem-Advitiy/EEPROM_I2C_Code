@@ -1,0 +1,1683 @@
+
+EEPROM_1(Xmega).elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000a08  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000100  00802000  00000a08  00000a9c  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000231  00802100  00802100  00000b9c  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000b9c  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000bcc  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 000001b0  00000000  00000000  00000c0c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00005dc3  00000000  00000000  00000dbc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00003c12  00000000  00000000  00006b7f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000013cc  00000000  00000000  0000a791  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000004e0  00000000  00000000  0000bb60  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00003253  00000000  00000000  0000c040  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000186d  00000000  00000000  0000f293  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000170  00000000  00000000  00010b00  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 fe 00 	jmp	0x1fc	; 0x1fc <__ctors_end>
+   4:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+   8:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+   c:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  10:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  14:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  18:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  1c:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  20:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  24:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  28:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  2c:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  30:	0c 94 f9 01 	jmp	0x3f2	; 0x3f2 <__vector_12>
+  34:	0c 94 cf 01 	jmp	0x39e	; 0x39e <__vector_13>
+  38:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  3c:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  40:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  44:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  48:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  4c:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  50:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  54:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  58:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  5c:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  60:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  64:	0c 94 23 02 	jmp	0x446	; 0x446 <__vector_25>
+  68:	0c 94 5f 02 	jmp	0x4be	; 0x4be <__vector_26>
+  6c:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  70:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  74:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  78:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  7c:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  80:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  84:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  88:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  8c:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  90:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  94:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  98:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  9c:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  a0:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  a4:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  a8:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  ac:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  b0:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  b4:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  b8:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  bc:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  c0:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  c4:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  c8:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  cc:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  d0:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  d4:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  d8:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  dc:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  e0:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  e4:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  e8:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  ec:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  f0:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  f4:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  f8:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+  fc:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 100:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 104:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 108:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 10c:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 110:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 114:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 118:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 11c:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 120:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 124:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 128:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 12c:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 130:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 134:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 138:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 13c:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 140:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 144:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 148:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 14c:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 150:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 154:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 158:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 15c:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 160:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 164:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 168:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 16c:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 170:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 174:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 178:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 17c:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 180:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 184:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 188:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 18c:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 190:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 194:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 198:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 19c:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1a0:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1a4:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1a8:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1ac:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1b0:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1b4:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1b8:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1bc:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1c0:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1c4:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1c8:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1cc:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1d0:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1d4:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1d8:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1dc:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1e0:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1e4:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1e8:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1ec:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1f0:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1f4:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+ 1f8:	0c 94 1f 01 	jmp	0x23e	; 0x23e <__bad_interrupt>
+
+000001fc <__ctors_end>:
+ 1fc:	11 24       	eor	r1, r1
+ 1fe:	1f be       	out	0x3f, r1	; 63
+ 200:	cf ef       	ldi	r28, 0xFF	; 255
+ 202:	cd bf       	out	0x3d, r28	; 61
+ 204:	df e3       	ldi	r29, 0x3F	; 63
+ 206:	de bf       	out	0x3e, r29	; 62
+ 208:	00 e0       	ldi	r16, 0x00	; 0
+ 20a:	0c bf       	out	0x3c, r16	; 60
+
+0000020c <__do_copy_data>:
+ 20c:	11 e2       	ldi	r17, 0x21	; 33
+ 20e:	a0 e0       	ldi	r26, 0x00	; 0
+ 210:	b0 e2       	ldi	r27, 0x20	; 32
+ 212:	e8 e0       	ldi	r30, 0x08	; 8
+ 214:	fa e0       	ldi	r31, 0x0A	; 10
+ 216:	00 e0       	ldi	r16, 0x00	; 0
+ 218:	0b bf       	out	0x3b, r16	; 59
+ 21a:	02 c0       	rjmp	.+4      	; 0x220 <__do_copy_data+0x14>
+ 21c:	07 90       	elpm	r0, Z+
+ 21e:	0d 92       	st	X+, r0
+ 220:	a0 30       	cpi	r26, 0x00	; 0
+ 222:	b1 07       	cpc	r27, r17
+ 224:	d9 f7       	brne	.-10     	; 0x21c <__do_copy_data+0x10>
+
+00000226 <__do_clear_bss>:
+ 226:	23 e2       	ldi	r18, 0x23	; 35
+ 228:	a0 e0       	ldi	r26, 0x00	; 0
+ 22a:	b1 e2       	ldi	r27, 0x21	; 33
+ 22c:	01 c0       	rjmp	.+2      	; 0x230 <.do_clear_bss_start>
+
+0000022e <.do_clear_bss_loop>:
+ 22e:	1d 92       	st	X+, r1
+
+00000230 <.do_clear_bss_start>:
+ 230:	a1 33       	cpi	r26, 0x31	; 49
+ 232:	b2 07       	cpc	r27, r18
+ 234:	e1 f7       	brne	.-8      	; 0x22e <.do_clear_bss_loop>
+ 236:	0e 94 80 01 	call	0x300	; 0x300 <main>
+ 23a:	0c 94 02 05 	jmp	0xa04	; 0xa04 <_exit>
+
+0000023e <__bad_interrupt>:
+ 23e:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000242 <eeprom_page_write>:
+uint8_t sending[NUM_BYTES]={'a','d','v','i','t','y','I','I','T','B','o','m','b','a','y'};
+uint8_t SendBuffer[NUM_BYTES] ={0b00000010,0b00000000};
+
+
+void eeprom_page_write(uint8_t page_address, uint8_t *write_data, int length)
+{
+ 242:	ef 92       	push	r14
+ 244:	ff 92       	push	r15
+ 246:	0f 93       	push	r16
+ 248:	cf 93       	push	r28
+ 24a:	df 93       	push	r29
+ 24c:	cd b7       	in	r28, 0x3d	; 61
+ 24e:	de b7       	in	r29, 0x3e	; 62
+ 250:	9a 01       	movw	r18, r20
+	0);
+	while (twiMaster.status != TWIM_STATUS_READY) {
+		// Wait until transaction is complete.
+	}
+	
+}
+ 252:	ed b6       	in	r14, 0x3d	; 61
+ 254:	fe b6       	in	r15, 0x3e	; 62
+uint8_t SendBuffer[NUM_BYTES] ={0b00000010,0b00000000};
+
+
+void eeprom_page_write(uint8_t page_address, uint8_t *write_data, int length)
+{
+	uint8_t a[length+2];
+ 256:	fa 01       	movw	r30, r20
+ 258:	32 96       	adiw	r30, 0x02	; 2
+ 25a:	4d b7       	in	r20, 0x3d	; 61
+ 25c:	5e b7       	in	r21, 0x3e	; 62
+ 25e:	4e 1b       	sub	r20, r30
+ 260:	5f 0b       	sbc	r21, r31
+ 262:	4d bf       	out	0x3d, r20	; 61
+ 264:	5e bf       	out	0x3e, r21	; 62
+ 266:	4f 5f       	subi	r20, 0xFF	; 255
+ 268:	5f 4f       	sbci	r21, 0xFF	; 255
+	a[0]=page_address;
+ 26a:	ad b7       	in	r26, 0x3d	; 61
+ 26c:	be b7       	in	r27, 0x3e	; 62
+ 26e:	11 96       	adiw	r26, 0x01	; 1
+ 270:	8c 93       	st	X, r24
+	a[1]=0b00000000;
+ 272:	da 01       	movw	r26, r20
+ 274:	11 96       	adiw	r26, 0x01	; 1
+ 276:	1c 92       	st	X, r1
+ 278:	11 97       	sbiw	r26, 0x01	; 1
+
+
+	for(int i=2; i<(length+2); i++)
+ 27a:	33 97       	sbiw	r30, 0x03	; 3
+ 27c:	7c f0       	brlt	.+30     	; 0x29c <eeprom_page_write+0x5a>
+ 27e:	fb 01       	movw	r30, r22
+ 280:	12 96       	adiw	r26, 0x02	; 2
+ 282:	62 0f       	add	r22, r18
+ 284:	73 1f       	adc	r23, r19
+	{
+		a[i]=write_data[i-2];
+ 286:	81 91       	ld	r24, Z+
+ 288:	8d 93       	st	X+, r24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 28a:	8f e4       	ldi	r24, 0x4F	; 79
+ 28c:	93 ec       	ldi	r25, 0xC3	; 195
+ 28e:	01 97       	sbiw	r24, 0x01	; 1
+ 290:	f1 f7       	brne	.-4      	; 0x28e <eeprom_page_write+0x4c>
+ 292:	00 c0       	rjmp	.+0      	; 0x294 <eeprom_page_write+0x52>
+ 294:	00 00       	nop
+	uint8_t a[length+2];
+	a[0]=page_address;
+	a[1]=0b00000000;
+
+
+	for(int i=2; i<(length+2); i++)
+ 296:	e6 17       	cp	r30, r22
+ 298:	f7 07       	cpc	r31, r23
+ 29a:	a9 f7       	brne	.-22     	; 0x286 <eeprom_page_write+0x44>
+		a[i]=write_data[i-2];
+		//UART_TXBuffer_PutByte(&USART_data, write_data[i-2]);
+		_delay_ms(100);
+	}
+	
+	TWI_MasterWriteRead(&twiMaster,                                      //added by me
+ 29c:	2e 5f       	subi	r18, 0xFE	; 254
+ 29e:	00 e0       	ldi	r16, 0x00	; 0
+ 2a0:	60 ea       	ldi	r22, 0xA0	; 160
+ 2a2:	8f e0       	ldi	r24, 0x0F	; 15
+ 2a4:	91 e2       	ldi	r25, 0x21	; 33
+ 2a6:	0e 94 9a 02 	call	0x534	; 0x534 <TWI_MasterWriteRead>
+	SLAVE_ADDRESS,
+	&a,
+	length+2,
+	0);
+	while (twiMaster.status != TWIM_STATUS_READY) {
+ 2aa:	e6 e1       	ldi	r30, 0x16	; 22
+ 2ac:	f3 e2       	ldi	r31, 0x23	; 35
+ 2ae:	80 81       	ld	r24, Z
+ 2b0:	81 11       	cpse	r24, r1
+ 2b2:	fd cf       	rjmp	.-6      	; 0x2ae <eeprom_page_write+0x6c>
+		// Wait until transaction is complete.
+	}
+	
+}
+ 2b4:	ed be       	out	0x3d, r14	; 61
+ 2b6:	fe be       	out	0x3e, r15	; 62
+ 2b8:	df 91       	pop	r29
+ 2ba:	cf 91       	pop	r28
+ 2bc:	0f 91       	pop	r16
+ 2be:	ff 90       	pop	r15
+ 2c0:	ef 90       	pop	r14
+ 2c2:	08 95       	ret
+
+000002c4 <eeprom_page_read>:
+
+void eeprom_page_read(uint8_t page_address, int length)
+{
+ 2c4:	0f 93       	push	r16
+ 2c6:	cf 93       	push	r28
+ 2c8:	df 93       	push	r29
+ 2ca:	1f 92       	push	r1
+ 2cc:	1f 92       	push	r1
+ 2ce:	cd b7       	in	r28, 0x3d	; 61
+ 2d0:	de b7       	in	r29, 0x3e	; 62
+		uint8_t a[2];
+		a[0]=page_address;
+ 2d2:	89 83       	std	Y+1, r24	; 0x01
+		a[1]=0b00000000;
+ 2d4:	1a 82       	std	Y+2, r1	; 0x02
+		
+		TWI_MasterWriteRead(&twiMaster,                                      //added by me
+ 2d6:	06 2f       	mov	r16, r22
+ 2d8:	22 e0       	ldi	r18, 0x02	; 2
+ 2da:	ae 01       	movw	r20, r28
+ 2dc:	4f 5f       	subi	r20, 0xFF	; 255
+ 2de:	5f 4f       	sbci	r21, 0xFF	; 255
+ 2e0:	60 ea       	ldi	r22, 0xA0	; 160
+ 2e2:	8f e0       	ldi	r24, 0x0F	; 15
+ 2e4:	91 e2       	ldi	r25, 0x21	; 33
+ 2e6:	0e 94 9a 02 	call	0x534	; 0x534 <TWI_MasterWriteRead>
+		SLAVE_ADDRESS,
+		&a,
+		2,
+		length);
+		
+		while (twiMaster.status != TWIM_STATUS_READY) {
+ 2ea:	e6 e1       	ldi	r30, 0x16	; 22
+ 2ec:	f3 e2       	ldi	r31, 0x23	; 35
+ 2ee:	80 81       	ld	r24, Z
+ 2f0:	81 11       	cpse	r24, r1
+ 2f2:	fd cf       	rjmp	.-6      	; 0x2ee <eeprom_page_read+0x2a>
+			// Wait until transaction is complete.
+		}	
+}
+ 2f4:	0f 90       	pop	r0
+ 2f6:	0f 90       	pop	r0
+ 2f8:	df 91       	pop	r29
+ 2fa:	cf 91       	pop	r28
+ 2fc:	0f 91       	pop	r16
+ 2fe:	08 95       	ret
+
+00000300 <main>:
+{
+	
+	/* This PORT setting is only valid to USARTC0 if other USARTs is used a
+	 * different PORT and/or pins are used. */
+  	/* PC3 (TXD0) as output. */
+	PORTC.DIRSET   = PIN3_bm;
+ 300:	e0 e4       	ldi	r30, 0x40	; 64
+ 302:	f6 e0       	ldi	r31, 0x06	; 6
+ 304:	88 e0       	ldi	r24, 0x08	; 8
+ 306:	81 83       	std	Z+1, r24	; 0x01
+	/* PC2 (RXD0) as input. */
+	PORTC.DIRCLR   = PIN2_bm;
+ 308:	84 e0       	ldi	r24, 0x04	; 4
+ 30a:	82 83       	std	Z+2, r24	; 0x02
+
+	/* Use USARTC0 and initialize buffers. */
+	USART_InterruptDriver_Initialize(&USART_data, &USART, USART_DREINTLVL_LO_gc);
+ 30c:	41 e0       	ldi	r20, 0x01	; 1
+ 30e:	60 ea       	ldi	r22, 0xA0	; 160
+ 310:	78 e0       	ldi	r23, 0x08	; 8
+ 312:	80 e0       	ldi	r24, 0x00	; 0
+ 314:	91 e2       	ldi	r25, 0x21	; 33
+ 316:	0e 94 90 04 	call	0x920	; 0x920 <USART_InterruptDriver_Initialize>
+
+	/* USARTC0, 8 Data bits, No Parity, 1 Stop bit. */
+	USART_Format_Set(USART_data.usart, USART_CHSIZE_8BIT_gc,
+ 31a:	e0 91 00 21 	lds	r30, 0x2100	; 0x802100 <__data_end>
+ 31e:	f0 91 01 21 	lds	r31, 0x2101	; 0x802101 <__data_end+0x1>
+ 322:	83 e0       	ldi	r24, 0x03	; 3
+ 324:	85 83       	std	Z+5, r24	; 0x05
+                     USART_PMODE_DISABLED_gc, false);
+
+	/* Enable RXC interrupt. */
+	USART_RxdInterruptLevel_Set(USART_data.usart, USART_RXCINTLVL_LO_gc);
+ 326:	83 81       	ldd	r24, Z+3	; 0x03
+ 328:	8f 7c       	andi	r24, 0xCF	; 207
+ 32a:	80 61       	ori	r24, 0x10	; 16
+ 32c:	83 83       	std	Z+3, r24	; 0x03
+	 * Do not use the baudrate scale factor
+	 *
+	 * Baudrate select = (1/(16*(((I/O clock frequency)/Baudrate)-1)
+	 *                 = 12
+	 */
+	USART_Baudrate_Set(&USART, 12 , 0);
+ 32e:	a0 ea       	ldi	r26, 0xA0	; 160
+ 330:	b8 e0       	ldi	r27, 0x08	; 8
+ 332:	8c e0       	ldi	r24, 0x0C	; 12
+ 334:	16 96       	adiw	r26, 0x06	; 6
+ 336:	8c 93       	st	X, r24
+ 338:	16 97       	sbiw	r26, 0x06	; 6
+ 33a:	17 96       	adiw	r26, 0x07	; 7
+ 33c:	1c 92       	st	X, r1
+
+	/* Enable both RX and TX. */
+	USART_Rx_Enable(USART_data.usart);
+ 33e:	84 81       	ldd	r24, Z+4	; 0x04
+ 340:	80 61       	ori	r24, 0x10	; 16
+ 342:	84 83       	std	Z+4, r24	; 0x04
+	USART_Tx_Enable(USART_data.usart);
+ 344:	84 81       	ldd	r24, Z+4	; 0x04
+ 346:	88 60       	ori	r24, 0x08	; 8
+ 348:	84 83       	std	Z+4, r24	; 0x04
+
+
+	
+
+	/* Initialize TWI master. */
+	TWI_MasterInit(&twiMaster,
+ 34a:	23 e6       	ldi	r18, 0x63	; 99
+ 34c:	40 e4       	ldi	r20, 0x40	; 64
+ 34e:	60 e8       	ldi	r22, 0x80	; 128
+ 350:	74 e0       	ldi	r23, 0x04	; 4
+ 352:	8f e0       	ldi	r24, 0x0F	; 15
+ 354:	91 e2       	ldi	r25, 0x21	; 33
+ 356:	0e 94 89 02 	call	0x512	; 0x512 <TWI_MasterInit>
+	               TWI_MASTER_INTLVL_LO_gc,
+	               TWI_BAUDSETTING);
+
+
+	/* Enable LO interrupt level. */
+	PMIC.CTRL |= PMIC_LOLVLEN_bm;
+ 35a:	e0 ea       	ldi	r30, 0xA0	; 160
+ 35c:	f0 e0       	ldi	r31, 0x00	; 0
+ 35e:	82 81       	ldd	r24, Z+2	; 0x02
+ 360:	81 60       	ori	r24, 0x01	; 1
+ 362:	82 83       	std	Z+2, r24	; 0x02
+	sei();
+ 364:	78 94       	sei
+	//0);
+	//while (twiMaster.status != TWIM_STATUS_READY) {
+		//// Wait until transaction is complete.
+	//}
+	//	UART_TXBuffer_PutByte(&USART_data, 'a');
+	eeprom_page_write(0b00000010,sending,15);
+ 366:	4f e0       	ldi	r20, 0x0F	; 15
+ 368:	50 e0       	ldi	r21, 0x00	; 0
+ 36a:	60 e0       	ldi	r22, 0x00	; 0
+ 36c:	70 e2       	ldi	r23, 0x20	; 32
+ 36e:	82 e0       	ldi	r24, 0x02	; 2
+ 370:	0e 94 21 01 	call	0x242	; 0x242 <eeprom_page_write>
+ 374:	8f e4       	ldi	r24, 0x4F	; 79
+ 376:	93 ec       	ldi	r25, 0xC3	; 195
+ 378:	01 97       	sbiw	r24, 0x01	; 1
+ 37a:	f1 f7       	brne	.-4      	; 0x378 <main+0x78>
+ 37c:	00 c0       	rjmp	.+0      	; 0x37e <main+0x7e>
+ 37e:	00 00       	nop
+		_delay_ms(100);
+	eeprom_page_read(0b00000010,15);
+ 380:	6f e0       	ldi	r22, 0x0F	; 15
+ 382:	70 e0       	ldi	r23, 0x00	; 0
+ 384:	82 e0       	ldi	r24, 0x02	; 2
+ 386:	0e 94 62 01 	call	0x2c4	; 0x2c4 <eeprom_page_read>
+ 38a:	9f e3       	ldi	r25, 0x3F	; 63
+ 38c:	2d e0       	ldi	r18, 0x0D	; 13
+ 38e:	83 e0       	ldi	r24, 0x03	; 3
+ 390:	91 50       	subi	r25, 0x01	; 1
+ 392:	20 40       	sbci	r18, 0x00	; 0
+ 394:	80 40       	sbci	r24, 0x00	; 0
+ 396:	e1 f7       	brne	.-8      	; 0x390 <main+0x90>
+ 398:	00 c0       	rjmp	.+0      	; 0x39a <main+0x9a>
+ 39a:	00 00       	nop
+ 39c:	e4 cf       	rjmp	.-56     	; 0x366 <main+0x66>
+
+0000039e <__vector_13>:
+
+
+
+/*! TWIC Master Interrupt vector. */
+ISR(TWIC_TWIM_vect)
+{
+ 39e:	1f 92       	push	r1
+ 3a0:	0f 92       	push	r0
+ 3a2:	0f b6       	in	r0, 0x3f	; 63
+ 3a4:	0f 92       	push	r0
+ 3a6:	11 24       	eor	r1, r1
+ 3a8:	0b b6       	in	r0, 0x3b	; 59
+ 3aa:	0f 92       	push	r0
+ 3ac:	2f 93       	push	r18
+ 3ae:	3f 93       	push	r19
+ 3b0:	4f 93       	push	r20
+ 3b2:	5f 93       	push	r21
+ 3b4:	6f 93       	push	r22
+ 3b6:	7f 93       	push	r23
+ 3b8:	8f 93       	push	r24
+ 3ba:	9f 93       	push	r25
+ 3bc:	af 93       	push	r26
+ 3be:	bf 93       	push	r27
+ 3c0:	ef 93       	push	r30
+ 3c2:	ff 93       	push	r31
+	TWI_MasterInterruptHandler(&twiMaster);
+ 3c4:	8f e0       	ldi	r24, 0x0F	; 15
+ 3c6:	91 e2       	ldi	r25, 0x21	; 33
+ 3c8:	0e 94 82 03 	call	0x704	; 0x704 <TWI_MasterInterruptHandler>
+}
+ 3cc:	ff 91       	pop	r31
+ 3ce:	ef 91       	pop	r30
+ 3d0:	bf 91       	pop	r27
+ 3d2:	af 91       	pop	r26
+ 3d4:	9f 91       	pop	r25
+ 3d6:	8f 91       	pop	r24
+ 3d8:	7f 91       	pop	r23
+ 3da:	6f 91       	pop	r22
+ 3dc:	5f 91       	pop	r21
+ 3de:	4f 91       	pop	r20
+ 3e0:	3f 91       	pop	r19
+ 3e2:	2f 91       	pop	r18
+ 3e4:	0f 90       	pop	r0
+ 3e6:	0b be       	out	0x3b, r0	; 59
+ 3e8:	0f 90       	pop	r0
+ 3ea:	0f be       	out	0x3f, r0	; 63
+ 3ec:	0f 90       	pop	r0
+ 3ee:	1f 90       	pop	r1
+ 3f0:	18 95       	reti
+
+000003f2 <__vector_12>:
+
+
+/*! TWIC Slave Interrupt vector. */
+ISR(TWIC_TWIS_vect)
+{
+ 3f2:	1f 92       	push	r1
+ 3f4:	0f 92       	push	r0
+ 3f6:	0f b6       	in	r0, 0x3f	; 63
+ 3f8:	0f 92       	push	r0
+ 3fa:	11 24       	eor	r1, r1
+ 3fc:	0b b6       	in	r0, 0x3b	; 59
+ 3fe:	0f 92       	push	r0
+ 400:	2f 93       	push	r18
+ 402:	3f 93       	push	r19
+ 404:	4f 93       	push	r20
+ 406:	5f 93       	push	r21
+ 408:	6f 93       	push	r22
+ 40a:	7f 93       	push	r23
+ 40c:	8f 93       	push	r24
+ 40e:	9f 93       	push	r25
+ 410:	af 93       	push	r26
+ 412:	bf 93       	push	r27
+ 414:	ef 93       	push	r30
+ 416:	ff 93       	push	r31
+	TWI_SlaveInterruptHandler(&twiSlave);
+ 418:	88 e1       	ldi	r24, 0x18	; 24
+ 41a:	93 e2       	ldi	r25, 0x23	; 35
+ 41c:	0e 94 61 04 	call	0x8c2	; 0x8c2 <TWI_SlaveInterruptHandler>
+	
+}
+ 420:	ff 91       	pop	r31
+ 422:	ef 91       	pop	r30
+ 424:	bf 91       	pop	r27
+ 426:	af 91       	pop	r26
+ 428:	9f 91       	pop	r25
+ 42a:	8f 91       	pop	r24
+ 42c:	7f 91       	pop	r23
+ 42e:	6f 91       	pop	r22
+ 430:	5f 91       	pop	r21
+ 432:	4f 91       	pop	r20
+ 434:	3f 91       	pop	r19
+ 436:	2f 91       	pop	r18
+ 438:	0f 90       	pop	r0
+ 43a:	0b be       	out	0x3b, r0	; 59
+ 43c:	0f 90       	pop	r0
+ 43e:	0f be       	out	0x3f, r0	; 63
+ 440:	0f 90       	pop	r0
+ 442:	1f 90       	pop	r1
+ 444:	18 95       	reti
+
+00000446 <__vector_25>:
+ *  Receive complete interrupt service routine.
+ *  Calls the common receive complete handler with pointer to the correct USART
+ *  as argument.
+ */
+ISR(USARTC0_RXC_vect)
+{
+ 446:	1f 92       	push	r1
+ 448:	0f 92       	push	r0
+ 44a:	0f b6       	in	r0, 0x3f	; 63
+ 44c:	0f 92       	push	r0
+ 44e:	11 24       	eor	r1, r1
+ 450:	0b b6       	in	r0, 0x3b	; 59
+ 452:	0f 92       	push	r0
+ 454:	2f 93       	push	r18
+ 456:	3f 93       	push	r19
+ 458:	4f 93       	push	r20
+ 45a:	5f 93       	push	r21
+ 45c:	6f 93       	push	r22
+ 45e:	7f 93       	push	r23
+ 460:	8f 93       	push	r24
+ 462:	9f 93       	push	r25
+ 464:	af 93       	push	r26
+ 466:	bf 93       	push	r27
+ 468:	ef 93       	push	r30
+ 46a:	ff 93       	push	r31
+	int receive=0;
+	USART_RXComplete(&USART_data);
+ 46c:	80 e0       	ldi	r24, 0x00	; 0
+ 46e:	91 e2       	ldi	r25, 0x21	; 33
+ 470:	0e 94 b7 04 	call	0x96e	; 0x96e <USART_RXComplete>
+	if (USART_RXBufferData_Available(&USART_data)) {                                               // modified by  me
+ 474:	80 e0       	ldi	r24, 0x00	; 0
+ 476:	91 e2       	ldi	r25, 0x21	; 33
+ 478:	0e 94 a3 04 	call	0x946	; 0x946 <USART_RXBufferData_Available>
+ 47c:	88 23       	and	r24, r24
+ 47e:	31 f0       	breq	.+12     	; 0x48c <__vector_25+0x46>
+	receive = USART_RXBuffer_GetByte(&USART_data);}                  // receive the data      // modified
+ 480:	80 e0       	ldi	r24, 0x00	; 0
+ 482:	91 e2       	ldi	r25, 0x21	; 33
+ 484:	0e 94 ab 04 	call	0x956	; 0x956 <USART_RXBuffer_GetByte>
+ 488:	68 2f       	mov	r22, r24
+ 48a:	02 c0       	rjmp	.+4      	; 0x490 <__vector_25+0x4a>
+ *  Calls the common receive complete handler with pointer to the correct USART
+ *  as argument.
+ */
+ISR(USARTC0_RXC_vect)
+{
+	int receive=0;
+ 48c:	60 e0       	ldi	r22, 0x00	; 0
+ 48e:	70 e0       	ldi	r23, 0x00	; 0
+	USART_RXComplete(&USART_data);
+	if (USART_RXBufferData_Available(&USART_data)) {                                               // modified by  me
+	receive = USART_RXBuffer_GetByte(&USART_data);}                  // receive the data      // modified
+	UART_TXBuffer_PutByte(&USART_data, receive);	                     // send data
+ 490:	80 e0       	ldi	r24, 0x00	; 0
+ 492:	91 e2       	ldi	r25, 0x21	; 33
+ 494:	0e 94 e6 04 	call	0x9cc	; 0x9cc <UART_TXBuffer_PutByte>
+	
+}
+ 498:	ff 91       	pop	r31
+ 49a:	ef 91       	pop	r30
+ 49c:	bf 91       	pop	r27
+ 49e:	af 91       	pop	r26
+ 4a0:	9f 91       	pop	r25
+ 4a2:	8f 91       	pop	r24
+ 4a4:	7f 91       	pop	r23
+ 4a6:	6f 91       	pop	r22
+ 4a8:	5f 91       	pop	r21
+ 4aa:	4f 91       	pop	r20
+ 4ac:	3f 91       	pop	r19
+ 4ae:	2f 91       	pop	r18
+ 4b0:	0f 90       	pop	r0
+ 4b2:	0b be       	out	0x3b, r0	; 59
+ 4b4:	0f 90       	pop	r0
+ 4b6:	0f be       	out	0x3f, r0	; 63
+ 4b8:	0f 90       	pop	r0
+ 4ba:	1f 90       	pop	r1
+ 4bc:	18 95       	reti
+
+000004be <__vector_26>:
+ *  Data register empty  interrupt service routine.
+ *  Calls the common data register empty complete handler with pointer to the
+ *  correct USART as argument.
+ */
+ISR(USARTC0_DRE_vect)
+{
+ 4be:	1f 92       	push	r1
+ 4c0:	0f 92       	push	r0
+ 4c2:	0f b6       	in	r0, 0x3f	; 63
+ 4c4:	0f 92       	push	r0
+ 4c6:	11 24       	eor	r1, r1
+ 4c8:	0b b6       	in	r0, 0x3b	; 59
+ 4ca:	0f 92       	push	r0
+ 4cc:	2f 93       	push	r18
+ 4ce:	3f 93       	push	r19
+ 4d0:	4f 93       	push	r20
+ 4d2:	5f 93       	push	r21
+ 4d4:	6f 93       	push	r22
+ 4d6:	7f 93       	push	r23
+ 4d8:	8f 93       	push	r24
+ 4da:	9f 93       	push	r25
+ 4dc:	af 93       	push	r26
+ 4de:	bf 93       	push	r27
+ 4e0:	ef 93       	push	r30
+ 4e2:	ff 93       	push	r31
+	USART_DataRegEmpty(&USART_data);
+ 4e4:	80 e0       	ldi	r24, 0x00	; 0
+ 4e6:	91 e2       	ldi	r25, 0x21	; 33
+ 4e8:	0e 94 cc 04 	call	0x998	; 0x998 <USART_DataRegEmpty>
+}
+ 4ec:	ff 91       	pop	r31
+ 4ee:	ef 91       	pop	r30
+ 4f0:	bf 91       	pop	r27
+ 4f2:	af 91       	pop	r26
+ 4f4:	9f 91       	pop	r25
+ 4f6:	8f 91       	pop	r24
+ 4f8:	7f 91       	pop	r23
+ 4fa:	6f 91       	pop	r22
+ 4fc:	5f 91       	pop	r21
+ 4fe:	4f 91       	pop	r20
+ 500:	3f 91       	pop	r19
+ 502:	2f 91       	pop	r18
+ 504:	0f 90       	pop	r0
+ 506:	0b be       	out	0x3b, r0	; 59
+ 508:	0f 90       	pop	r0
+ 50a:	0f be       	out	0x3f, r0	; 63
+ 50c:	0f 90       	pop	r0
+ 50e:	1f 90       	pop	r1
+ 510:	18 95       	reti
+
+00000512 <TWI_MasterInit>:
+ *  \param result  The result of the operation.
+ */
+void TWI_MasterTransactionFinished(TWI_Master_t *twi, uint8_t result)
+{
+	twi->result = result;
+	twi->status = TWIM_STATUS_READY;
+ 512:	fc 01       	movw	r30, r24
+ 514:	60 83       	st	Z, r22
+ 516:	71 83       	std	Z+1, r23	; 0x01
+ 518:	48 63       	ori	r20, 0x38	; 56
+ 51a:	db 01       	movw	r26, r22
+ 51c:	11 96       	adiw	r26, 0x01	; 1
+ 51e:	4c 93       	st	X, r20
+ 520:	a0 81       	ld	r26, Z
+ 522:	b1 81       	ldd	r27, Z+1	; 0x01
+ 524:	15 96       	adiw	r26, 0x05	; 5
+ 526:	2c 93       	st	X, r18
+ 528:	01 90       	ld	r0, Z+
+ 52a:	f0 81       	ld	r31, Z
+ 52c:	e0 2d       	mov	r30, r0
+ 52e:	81 e0       	ldi	r24, 0x01	; 1
+ 530:	84 83       	std	Z+4, r24	; 0x04
+ 532:	08 95       	ret
+
+00000534 <TWI_MasterWriteRead>:
+ 534:	ef 92       	push	r14
+ 536:	ff 92       	push	r15
+ 538:	0f 93       	push	r16
+ 53a:	cf 93       	push	r28
+ 53c:	df 93       	push	r29
+ 53e:	ec 01       	movw	r28, r24
+ 540:	fc 01       	movw	r30, r24
+ 542:	e9 5f       	subi	r30, 0xF9	; 249
+ 544:	fd 4f       	sbci	r31, 0xFD	; 253
+ 546:	80 81       	ld	r24, Z
+ 548:	81 11       	cpse	r24, r1
+ 54a:	3d c0       	rjmp	.+122    	; 0x5c6 <TWI_MasterWriteRead+0x92>
+ 54c:	81 e0       	ldi	r24, 0x01	; 1
+ 54e:	80 83       	st	Z, r24
+ 550:	31 96       	adiw	r30, 0x01	; 1
+ 552:	10 82       	st	Z, r1
+ 554:	6a 83       	std	Y+2, r22	; 0x02
+ 556:	22 23       	and	r18, r18
+ 558:	a1 f0       	breq	.+40     	; 0x582 <TWI_MasterWriteRead+0x4e>
+ 55a:	7a 01       	movw	r14, r20
+ 55c:	6f ef       	ldi	r22, 0xFF	; 255
+ 55e:	62 0f       	add	r22, r18
+ 560:	70 e0       	ldi	r23, 0x00	; 0
+ 562:	6f 5f       	subi	r22, 0xFF	; 255
+ 564:	7f 4f       	sbci	r23, 0xFF	; 255
+ 566:	64 0f       	add	r22, r20
+ 568:	75 1f       	adc	r23, r21
+ 56a:	fa 01       	movw	r30, r20
+ 56c:	df 01       	movw	r26, r30
+ 56e:	ae 19       	sub	r26, r14
+ 570:	bf 09       	sbc	r27, r15
+ 572:	91 91       	ld	r25, Z+
+ 574:	ac 0f       	add	r26, r28
+ 576:	bd 1f       	adc	r27, r29
+ 578:	13 96       	adiw	r26, 0x03	; 3
+ 57a:	9c 93       	st	X, r25
+ 57c:	e6 17       	cp	r30, r22
+ 57e:	f7 07       	cpc	r31, r23
+ 580:	a9 f7       	brne	.-22     	; 0x56c <TWI_MasterWriteRead+0x38>
+ 582:	fe 01       	movw	r30, r28
+ 584:	ed 5f       	subi	r30, 0xFD	; 253
+ 586:	fd 4f       	sbci	r31, 0xFD	; 253
+ 588:	20 83       	st	Z, r18
+ 58a:	de 01       	movw	r26, r28
+ 58c:	ac 5f       	subi	r26, 0xFC	; 252
+ 58e:	bd 4f       	sbci	r27, 0xFD	; 253
+ 590:	0c 93       	st	X, r16
+ 592:	11 96       	adiw	r26, 0x01	; 1
+ 594:	1c 92       	st	X, r1
+ 596:	11 96       	adiw	r26, 0x01	; 1
+ 598:	1c 92       	st	X, r1
+ 59a:	80 81       	ld	r24, Z
+ 59c:	88 23       	and	r24, r24
+ 59e:	31 f0       	breq	.+12     	; 0x5ac <TWI_MasterWriteRead+0x78>
+ 5a0:	8a 81       	ldd	r24, Y+2	; 0x02
+ 5a2:	e8 81       	ld	r30, Y
+ 5a4:	f9 81       	ldd	r31, Y+1	; 0x01
+ 5a6:	86 83       	std	Z+6, r24	; 0x06
+ 5a8:	81 e0       	ldi	r24, 0x01	; 1
+ 5aa:	10 c0       	rjmp	.+32     	; 0x5cc <TWI_MasterWriteRead+0x98>
+ 5ac:	fe 01       	movw	r30, r28
+ 5ae:	ec 5f       	subi	r30, 0xFC	; 252
+ 5b0:	fd 4f       	sbci	r31, 0xFD	; 253
+ 5b2:	80 81       	ld	r24, Z
+ 5b4:	88 23       	and	r24, r24
+ 5b6:	49 f0       	breq	.+18     	; 0x5ca <TWI_MasterWriteRead+0x96>
+ 5b8:	8a 81       	ldd	r24, Y+2	; 0x02
+ 5ba:	81 60       	ori	r24, 0x01	; 1
+ 5bc:	e8 81       	ld	r30, Y
+ 5be:	f9 81       	ldd	r31, Y+1	; 0x01
+ 5c0:	86 83       	std	Z+6, r24	; 0x06
+ 5c2:	81 e0       	ldi	r24, 0x01	; 1
+ 5c4:	03 c0       	rjmp	.+6      	; 0x5cc <TWI_MasterWriteRead+0x98>
+ 5c6:	80 e0       	ldi	r24, 0x00	; 0
+ 5c8:	01 c0       	rjmp	.+2      	; 0x5cc <TWI_MasterWriteRead+0x98>
+ 5ca:	81 e0       	ldi	r24, 0x01	; 1
+ 5cc:	df 91       	pop	r29
+ 5ce:	cf 91       	pop	r28
+ 5d0:	0f 91       	pop	r16
+ 5d2:	ff 90       	pop	r15
+ 5d4:	ef 90       	pop	r14
+ 5d6:	08 95       	ret
+
+000005d8 <TWI_MasterArbitrationLostBusErrorHandler>:
+ 5d8:	dc 01       	movw	r26, r24
+ 5da:	ed 91       	ld	r30, X+
+ 5dc:	fc 91       	ld	r31, X
+ 5de:	11 97       	sbiw	r26, 0x01	; 1
+ 5e0:	24 81       	ldd	r18, Z+4	; 0x04
+ 5e2:	22 ff       	sbrs	r18, 2
+ 5e4:	05 c0       	rjmp	.+10     	; 0x5f0 <TWI_MasterArbitrationLostBusErrorHandler+0x18>
+ 5e6:	34 e0       	ldi	r19, 0x04	; 4
+ 5e8:	a8 5f       	subi	r26, 0xF8	; 248
+ 5ea:	bd 4f       	sbci	r27, 0xFD	; 253
+ 5ec:	3c 93       	st	X, r19
+ 5ee:	05 c0       	rjmp	.+10     	; 0x5fa <TWI_MasterArbitrationLostBusErrorHandler+0x22>
+ 5f0:	33 e0       	ldi	r19, 0x03	; 3
+ 5f2:	dc 01       	movw	r26, r24
+ 5f4:	a8 5f       	subi	r26, 0xF8	; 248
+ 5f6:	bd 4f       	sbci	r27, 0xFD	; 253
+ 5f8:	3c 93       	st	X, r19
+ 5fa:	28 60       	ori	r18, 0x08	; 8
+ 5fc:	24 83       	std	Z+4, r18	; 0x04
+ 5fe:	fc 01       	movw	r30, r24
+ 600:	e9 5f       	subi	r30, 0xF9	; 249
+ 602:	fd 4f       	sbci	r31, 0xFD	; 253
+ 604:	10 82       	st	Z, r1
+ 606:	08 95       	ret
+
+00000608 <TWI_MasterWriteHandler>:
+ 608:	cf 93       	push	r28
+ 60a:	df 93       	push	r29
+ 60c:	fc 01       	movw	r30, r24
+ 60e:	ed 5f       	subi	r30, 0xFD	; 253
+ 610:	fd 4f       	sbci	r31, 0xFD	; 253
+ 612:	30 81       	ld	r19, Z
+ 614:	31 96       	adiw	r30, 0x01	; 1
+ 616:	40 81       	ld	r20, Z
+ 618:	dc 01       	movw	r26, r24
+ 61a:	ed 91       	ld	r30, X+
+ 61c:	fc 91       	ld	r31, X
+ 61e:	24 81       	ldd	r18, Z+4	; 0x04
+ 620:	24 ff       	sbrs	r18, 4
+ 622:	0a c0       	rjmp	.+20     	; 0x638 <TWI_MasterWriteHandler+0x30>
+ 624:	23 e0       	ldi	r18, 0x03	; 3
+ 626:	23 83       	std	Z+3, r18	; 0x03
+ 628:	fc 01       	movw	r30, r24
+ 62a:	e8 5f       	subi	r30, 0xF8	; 248
+ 62c:	fd 4f       	sbci	r31, 0xFD	; 253
+ 62e:	25 e0       	ldi	r18, 0x05	; 5
+ 630:	20 83       	st	Z, r18
+ 632:	31 97       	sbiw	r30, 0x01	; 1
+ 634:	10 82       	st	Z, r1
+ 636:	22 c0       	rjmp	.+68     	; 0x67c <TWI_MasterWriteHandler+0x74>
+ 638:	dc 01       	movw	r26, r24
+ 63a:	ab 5f       	subi	r26, 0xFB	; 251
+ 63c:	bd 4f       	sbci	r27, 0xFD	; 253
+ 63e:	2c 91       	ld	r18, X
+ 640:	23 17       	cp	r18, r19
+ 642:	50 f4       	brcc	.+20     	; 0x658 <TWI_MasterWriteHandler+0x50>
+ 644:	2c 91       	ld	r18, X
+ 646:	ec 01       	movw	r28, r24
+ 648:	c2 0f       	add	r28, r18
+ 64a:	d1 1d       	adc	r29, r1
+ 64c:	8b 81       	ldd	r24, Y+3	; 0x03
+ 64e:	87 83       	std	Z+7, r24	; 0x07
+ 650:	8c 91       	ld	r24, X
+ 652:	8f 5f       	subi	r24, 0xFF	; 255
+ 654:	8c 93       	st	X, r24
+ 656:	12 c0       	rjmp	.+36     	; 0x67c <TWI_MasterWriteHandler+0x74>
+ 658:	dc 01       	movw	r26, r24
+ 65a:	aa 5f       	subi	r26, 0xFA	; 250
+ 65c:	bd 4f       	sbci	r27, 0xFD	; 253
+ 65e:	2c 91       	ld	r18, X
+ 660:	24 17       	cp	r18, r20
+ 662:	18 f4       	brcc	.+6      	; 0x66a <TWI_MasterWriteHandler+0x62>
+ 664:	81 ea       	ldi	r24, 0xA1	; 161
+ 666:	86 83       	std	Z+6, r24	; 0x06
+ 668:	09 c0       	rjmp	.+18     	; 0x67c <TWI_MasterWriteHandler+0x74>
+ 66a:	23 e0       	ldi	r18, 0x03	; 3
+ 66c:	23 83       	std	Z+3, r18	; 0x03
+ 66e:	fc 01       	movw	r30, r24
+ 670:	e8 5f       	subi	r30, 0xF8	; 248
+ 672:	fd 4f       	sbci	r31, 0xFD	; 253
+ 674:	21 e0       	ldi	r18, 0x01	; 1
+ 676:	20 83       	st	Z, r18
+ 678:	31 97       	sbiw	r30, 0x01	; 1
+ 67a:	10 82       	st	Z, r1
+ 67c:	df 91       	pop	r29
+ 67e:	cf 91       	pop	r28
+ 680:	08 95       	ret
+
+00000682 <TWI_MasterReadDATA>:
+/*! USART data struct used in example. */
+//USART_data_t USART_data;
+
+
+void TWI_MasterReadDATA(TWI_Master_t *twi)
+{
+ 682:	0f 93       	push	r16
+ 684:	1f 93       	push	r17
+ 686:	cf 93       	push	r28
+ 688:	df 93       	push	r29
+ 68a:	ec 01       	movw	r28, r24
+	/* Fetch data if bytes to be read. */
+	if (twi->bytesRead < TWIM_READ_BUFFER_SIZE) {
+ 68c:	8c 01       	movw	r16, r24
+ 68e:	0a 5f       	subi	r16, 0xFA	; 250
+ 690:	1d 4f       	sbci	r17, 0xFD	; 253
+ 692:	f8 01       	movw	r30, r16
+ 694:	80 81       	ld	r24, Z
+		uint8_t data = twi->interface->MASTER.DATA;
+ 696:	e8 81       	ld	r30, Y
+ 698:	f9 81       	ldd	r31, Y+1	; 0x01
+ 69a:	67 81       	ldd	r22, Z+7	; 0x07
+		twi->readData[twi->bytesRead] = data;
+ 69c:	f8 01       	movw	r30, r16
+ 69e:	80 81       	ld	r24, Z
+ 6a0:	fe 01       	movw	r30, r28
+ 6a2:	e8 0f       	add	r30, r24
+ 6a4:	f1 1d       	adc	r31, r1
+ 6a6:	ed 5f       	subi	r30, 0xFD	; 253
+ 6a8:	fe 4f       	sbci	r31, 0xFE	; 254
+ 6aa:	60 83       	st	Z, r22
+		twi->bytesRead++;
+ 6ac:	f8 01       	movw	r30, r16
+ 6ae:	80 81       	ld	r24, Z
+ 6b0:	8f 5f       	subi	r24, 0xFF	; 255
+ 6b2:	80 83       	st	Z, r24
+		UART_TXBuffer_PutByte(&USART_data, data);	                             // send data      added by me
+ 6b4:	80 e0       	ldi	r24, 0x00	; 0
+ 6b6:	91 e2       	ldi	r25, 0x21	; 33
+ 6b8:	0e 94 e6 04 	call	0x9cc	; 0x9cc <UART_TXBuffer_PutByte>
+ 6bc:	87 e8       	ldi	r24, 0x87	; 135
+ 6be:	93 e1       	ldi	r25, 0x13	; 19
+ 6c0:	01 97       	sbiw	r24, 0x01	; 1
+ 6c2:	f1 f7       	brne	.-4      	; 0x6c0 <TWI_MasterReadDATA+0x3e>
+ 6c4:	00 c0       	rjmp	.+0      	; 0x6c6 <TWI_MasterReadDATA+0x44>
+ 6c6:	00 00       	nop
+		twi->interface->MASTER.CTRLC = TWI_MASTER_CMD_STOP_gc;
+		TWI_MasterTransactionFinished(twi, TWIM_RESULT_BUFFER_OVERFLOW);
+	}
+
+	/* Local variable used in if test to avoid compiler warning. */
+	uint8_t bytesToRead = twi->bytesToRead;
+ 6c8:	fe 01       	movw	r30, r28
+ 6ca:	ec 5f       	subi	r30, 0xFC	; 252
+ 6cc:	fd 4f       	sbci	r31, 0xFD	; 253
+ 6ce:	90 81       	ld	r25, Z
+
+	/* If more bytes to read, issue ACK and start a byte read. */
+	if (twi->bytesRead < bytesToRead) {
+ 6d0:	f8 01       	movw	r30, r16
+ 6d2:	80 81       	ld	r24, Z
+ 6d4:	89 17       	cp	r24, r25
+ 6d6:	28 f4       	brcc	.+10     	; 0x6e2 <TWI_MasterReadDATA+0x60>
+		twi->interface->MASTER.CTRLC = TWI_MASTER_CMD_RECVTRANS_gc;
+ 6d8:	e8 81       	ld	r30, Y
+ 6da:	f9 81       	ldd	r31, Y+1	; 0x01
+ 6dc:	82 e0       	ldi	r24, 0x02	; 2
+ 6de:	83 83       	std	Z+3, r24	; 0x03
+ 6e0:	0c c0       	rjmp	.+24     	; 0x6fa <TWI_MasterReadDATA+0x78>
+	}
+
+	/* If transaction finished, issue NACK and STOP condition. */
+	else {
+		twi->interface->MASTER.CTRLC = TWI_MASTER_ACKACT_bm |
+ 6e2:	e8 81       	ld	r30, Y
+ 6e4:	f9 81       	ldd	r31, Y+1	; 0x01
+ 6e6:	87 e0       	ldi	r24, 0x07	; 7
+ 6e8:	83 83       	std	Z+3, r24	; 0x03
+ *  \param twi     The TWI_Master_t struct instance.
+ *  \param result  The result of the operation.
+ */
+void TWI_MasterTransactionFinished(TWI_Master_t *twi, uint8_t result)
+{
+	twi->result = result;
+ 6ea:	fe 01       	movw	r30, r28
+ 6ec:	e8 5f       	subi	r30, 0xF8	; 248
+ 6ee:	fd 4f       	sbci	r31, 0xFD	; 253
+ 6f0:	81 e0       	ldi	r24, 0x01	; 1
+ 6f2:	80 83       	st	Z, r24
+	twi->status = TWIM_STATUS_READY;
+ 6f4:	c9 5f       	subi	r28, 0xF9	; 249
+ 6f6:	dd 4f       	sbci	r29, 0xFD	; 253
+ 6f8:	18 82       	st	Y, r1
+	else {
+		twi->interface->MASTER.CTRLC = TWI_MASTER_ACKACT_bm |
+		TWI_MASTER_CMD_STOP_gc;
+		TWI_MasterTransactionFinished(twi, TWIM_RESULT_OK);
+	}
+ 6fa:	df 91       	pop	r29
+ 6fc:	cf 91       	pop	r28
+ 6fe:	1f 91       	pop	r17
+ 700:	0f 91       	pop	r16
+ 702:	08 95       	ret
+
+00000704 <TWI_MasterInterruptHandler>:
+ *  Check current status and calls the appropriate handler.
+ *
+ *  \param twi  The TWI_Master_t struct instance.
+ */
+void TWI_MasterInterruptHandler(TWI_Master_t *twi)
+{
+ 704:	cf 93       	push	r28
+ 706:	df 93       	push	r29
+ 708:	ec 01       	movw	r28, r24
+	uint8_t currentStatus = twi->interface->MASTER.STATUS;
+ 70a:	e8 81       	ld	r30, Y
+ 70c:	f9 81       	ldd	r31, Y+1	; 0x01
+ 70e:	84 81       	ldd	r24, Z+4	; 0x04
+
+	/* If arbitration lost or bus error. */
+	if ((currentStatus & TWI_MASTER_ARBLOST_bm) ||
+ 710:	98 2f       	mov	r25, r24
+ 712:	9c 70       	andi	r25, 0x0C	; 12
+ 714:	21 f0       	breq	.+8      	; 0x71e <TWI_MasterInterruptHandler+0x1a>
+	    (currentStatus & TWI_MASTER_BUSERR_bm)) {
+
+		TWI_MasterArbitrationLostBusErrorHandler(twi);
+ 716:	ce 01       	movw	r24, r28
+ 718:	0e 94 ec 02 	call	0x5d8	; 0x5d8 <TWI_MasterArbitrationLostBusErrorHandler>
+ 71c:	19 c0       	rjmp	.+50     	; 0x750 <TWI_MasterInterruptHandler+0x4c>
+		//UART_TXBuffer_PutByte(&USART_data,'M');
+	}
+
+	/* If master write interrupt. */
+	else if (currentStatus & TWI_MASTER_WIF_bm) {
+ 71e:	86 ff       	sbrs	r24, 6
+ 720:	04 c0       	rjmp	.+8      	; 0x72a <TWI_MasterInterruptHandler+0x26>
+		TWI_MasterWriteHandler(twi);
+ 722:	ce 01       	movw	r24, r28
+ 724:	0e 94 04 03 	call	0x608	; 0x608 <TWI_MasterWriteHandler>
+ 728:	13 c0       	rjmp	.+38     	; 0x750 <TWI_MasterInterruptHandler+0x4c>
+		//UART_TXBuffer_PutByte(&USART_data,'L');
+	}
+
+	/* If master read interrupt. */
+	else if (currentStatus & TWI_MASTER_RIF_bm) { //UART_TXBuffer_PutByte(&USART_data,'K');
+ 72a:	88 23       	and	r24, r24
+ 72c:	24 f4       	brge	.+8      	; 0x736 <TWI_MasterInterruptHandler+0x32>
+		//TWI_MasterReadHandler(twi);                   //COMMENTED BY ME
+		TWI_MasterReadDATA(twi);                        //ADDED BY ME TO RECEIVE DATA AND SEND TO PC
+ 72e:	ce 01       	movw	r24, r28
+ 730:	0e 94 41 03 	call	0x682	; 0x682 <TWI_MasterReadDATA>
+ 734:	0d c0       	rjmp	.+26     	; 0x750 <TWI_MasterInterruptHandler+0x4c>
+	}
+
+	/* If unexpected state. */
+	else {UART_TXBuffer_PutByte(&USART_data,'z');
+ 736:	6a e7       	ldi	r22, 0x7A	; 122
+ 738:	80 e0       	ldi	r24, 0x00	; 0
+ 73a:	91 e2       	ldi	r25, 0x21	; 33
+ 73c:	0e 94 e6 04 	call	0x9cc	; 0x9cc <UART_TXBuffer_PutByte>
+ *  \param twi     The TWI_Master_t struct instance.
+ *  \param result  The result of the operation.
+ */
+void TWI_MasterTransactionFinished(TWI_Master_t *twi, uint8_t result)
+{
+	twi->result = result;
+ 740:	fe 01       	movw	r30, r28
+ 742:	e8 5f       	subi	r30, 0xF8	; 248
+ 744:	fd 4f       	sbci	r31, 0xFD	; 253
+ 746:	86 e0       	ldi	r24, 0x06	; 6
+ 748:	80 83       	st	Z, r24
+	twi->status = TWIM_STATUS_READY;
+ 74a:	c9 5f       	subi	r28, 0xF9	; 249
+ 74c:	dd 4f       	sbci	r29, 0xFD	; 253
+ 74e:	18 82       	st	Y, r1
+
+	/* If unexpected state. */
+	else {UART_TXBuffer_PutByte(&USART_data,'z');
+		TWI_MasterTransactionFinished(twi, TWIM_RESULT_FAIL);
+	}
+}
+ 750:	df 91       	pop	r29
+ 752:	cf 91       	pop	r28
+ 754:	08 95       	ret
+
+00000756 <TWI_SlaveAddressMatchHandler>:
+ *  \param result The result of the transaction.
+ */
+void TWI_SlaveTransactionFinished(TWI_Slave_t *twi, uint8_t result)
+{
+	twi->result = result;
+	twi->status = TWIS_STATUS_READY;
+ 756:	fc 01       	movw	r30, r24
+ 758:	80 8d       	ldd	r24, Z+24	; 0x18
+ 75a:	88 23       	and	r24, r24
+ 75c:	51 f0       	breq	.+20     	; 0x772 <TWI_SlaveAddressMatchHandler+0x1c>
+ 75e:	a0 81       	ld	r26, Z
+ 760:	b1 81       	ldd	r27, Z+1	; 0x01
+ 762:	82 e0       	ldi	r24, 0x02	; 2
+ 764:	19 96       	adiw	r26, 0x09	; 9
+ 766:	8c 93       	st	X, r24
+ 768:	86 e0       	ldi	r24, 0x06	; 6
+ 76a:	87 8b       	std	Z+23, r24	; 0x17
+ 76c:	16 8a       	std	Z+22, r1	; 0x16
+ 76e:	10 8e       	std	Z+24, r1	; 0x18
+ 770:	08 95       	ret
+ 772:	81 e0       	ldi	r24, 0x01	; 1
+ 774:	86 8b       	std	Z+22, r24	; 0x16
+ 776:	17 8a       	std	Z+23, r1	; 0x17
+ 778:	a0 81       	ld	r26, Z
+ 77a:	b1 81       	ldd	r27, Z+1	; 0x01
+ 77c:	18 96       	adiw	r26, 0x08	; 8
+ 77e:	8c 91       	ld	r24, X
+ 780:	18 97       	sbiw	r26, 0x08	; 8
+ 782:	8b 7f       	andi	r24, 0xFB	; 251
+ 784:	18 96       	adiw	r26, 0x08	; 8
+ 786:	8c 93       	st	X, r24
+ 788:	14 8a       	std	Z+20, r1	; 0x14
+ 78a:	15 8a       	std	Z+21, r1	; 0x15
+ 78c:	01 90       	ld	r0, Z+
+ 78e:	f0 81       	ld	r31, Z
+ 790:	e0 2d       	mov	r30, r0
+ 792:	83 e0       	ldi	r24, 0x03	; 3
+ 794:	81 87       	std	Z+9, r24	; 0x09
+ 796:	08 95       	ret
+
+00000798 <TWI_SlaveStopHandler>:
+ 798:	fc 01       	movw	r30, r24
+ 79a:	a0 81       	ld	r26, Z
+ 79c:	b1 81       	ldd	r27, Z+1	; 0x01
+ 79e:	18 96       	adiw	r26, 0x08	; 8
+ 7a0:	8c 91       	ld	r24, X
+ 7a2:	18 97       	sbiw	r26, 0x08	; 8
+ 7a4:	8b 7f       	andi	r24, 0xFB	; 251
+ 7a6:	18 96       	adiw	r26, 0x08	; 8
+ 7a8:	8c 93       	st	X, r24
+ 7aa:	a0 81       	ld	r26, Z
+ 7ac:	b1 81       	ldd	r27, Z+1	; 0x01
+ 7ae:	1a 96       	adiw	r26, 0x0a	; 10
+ 7b0:	8c 91       	ld	r24, X
+ 7b2:	1a 97       	sbiw	r26, 0x0a	; 10
+ 7b4:	80 64       	ori	r24, 0x40	; 64
+ 7b6:	1a 96       	adiw	r26, 0x0a	; 10
+ 7b8:	8c 93       	st	X, r24
+ 7ba:	81 e0       	ldi	r24, 0x01	; 1
+ 7bc:	87 8b       	std	Z+23, r24	; 0x17
+ 7be:	16 8a       	std	Z+22, r1	; 0x16
+ 7c0:	08 95       	ret
+
+000007c2 <TWI_SlaveReadDATA>:
+/*! USART data struct used in example. */
+USART_data_t USART_data;
+
+
+void   TWI_SlaveReadDATA(TWI_Slave_t *twi)
+                                            { 
+ 7c2:	cf 93       	push	r28
+ 7c4:	df 93       	push	r29
+ 7c6:	fc 01       	movw	r30, r24
+    
+	/* Enable stop interrupt. */
+	uint8_t currentCtrlA = twi->interface->SLAVE.CTRLA;
+ 7c8:	a0 81       	ld	r26, Z
+ 7ca:	b1 81       	ldd	r27, Z+1	; 0x01
+ 7cc:	18 96       	adiw	r26, 0x08	; 8
+ 7ce:	8c 91       	ld	r24, X
+ 7d0:	18 97       	sbiw	r26, 0x08	; 8
+	twi->interface->SLAVE.CTRLA = currentCtrlA | TWI_SLAVE_PIEN_bm;
+ 7d2:	84 60       	ori	r24, 0x04	; 4
+ 7d4:	18 96       	adiw	r26, 0x08	; 8
+ 7d6:	8c 93       	st	X, r24
+
+	/* If free space in buffer. */
+	if (twi->bytesReceived < TWIS_RECEIVE_BUFFER_SIZE) {
+ 7d8:	84 89       	ldd	r24, Z+20	; 0x14
+ 7da:	88 30       	cpi	r24, 0x08	; 8
+ 7dc:	58 f5       	brcc	.+86     	; 0x834 <TWI_SlaveReadDATA+0x72>
+ 7de:	ef 01       	movw	r28, r30
+		/* Fetch data */
+		uint8_t data = twi->interface->SLAVE.DATA;
+ 7e0:	01 90       	ld	r0, Z+
+ 7e2:	f0 81       	ld	r31, Z
+ 7e4:	e0 2d       	mov	r30, r0
+ 7e6:	64 85       	ldd	r22, Z+12	; 0x0c
+		twi->receivedData[twi->bytesReceived] = data;
+ 7e8:	8c 89       	ldd	r24, Y+20	; 0x14
+ 7ea:	fe 01       	movw	r30, r28
+ 7ec:	e8 0f       	add	r30, r24
+ 7ee:	f1 1d       	adc	r31, r1
+ 7f0:	64 83       	std	Z+4, r22	; 0x04
+	UART_TXBuffer_PutByte(&USART_data, data);	                             // send data      added by me
+ 7f2:	80 e0       	ldi	r24, 0x00	; 0
+ 7f4:	91 e2       	ldi	r25, 0x21	; 33
+ 7f6:	0e 94 e6 04 	call	0x9cc	; 0x9cc <UART_TXBuffer_PutByte>
+ 7fa:	8f e4       	ldi	r24, 0x4F	; 79
+ 7fc:	93 ec       	ldi	r25, 0xC3	; 195
+ 7fe:	01 97       	sbiw	r24, 0x01	; 1
+ 800:	f1 f7       	brne	.-4      	; 0x7fe <TWI_SlaveReadDATA+0x3c>
+ 802:	00 c0       	rjmp	.+0      	; 0x804 <TWI_SlaveReadDATA+0x42>
+ 804:	00 00       	nop
+	_delay_ms(100);
+		/* Process data. */
+		twi->Process_Data();
+ 806:	ea 81       	ldd	r30, Y+2	; 0x02
+ 808:	fb 81       	ldd	r31, Y+3	; 0x03
+ 80a:	19 95       	eicall
+
+		twi->bytesReceived++;
+ 80c:	8c 89       	ldd	r24, Y+20	; 0x14
+ 80e:	8f 5f       	subi	r24, 0xFF	; 255
+ 810:	8c 8b       	std	Y+20, r24	; 0x14
+
+		/* If application signaling need to abort (error occurred),
+		 * complete transaction and wait for next START. Otherwise
+		 * send ACK and wait for data interrupt.
+		 */
+		if (twi->abort) {
+ 812:	88 8d       	ldd	r24, Y+24	; 0x18
+ 814:	88 23       	and	r24, r24
+ 816:	49 f0       	breq	.+18     	; 0x82a <TWI_SlaveReadDATA+0x68>
+			twi->interface->SLAVE.CTRLB = TWI_SLAVE_CMD_COMPTRANS_gc;
+ 818:	e8 81       	ld	r30, Y
+ 81a:	f9 81       	ldd	r31, Y+1	; 0x01
+ 81c:	82 e0       	ldi	r24, 0x02	; 2
+ 81e:	81 87       	std	Z+9, r24	; 0x09
+ *  \param twi    The TWI_Slave_t struct instance.
+ *  \param result The result of the transaction.
+ */
+void TWI_SlaveTransactionFinished(TWI_Slave_t *twi, uint8_t result)
+{
+	twi->result = result;
+ 820:	86 e0       	ldi	r24, 0x06	; 6
+ 822:	8f 8b       	std	Y+23, r24	; 0x17
+	twi->status = TWIS_STATUS_READY;
+ 824:	1e 8a       	std	Y+22, r1	; 0x16
+		 * send ACK and wait for data interrupt.
+		 */
+		if (twi->abort) {
+			twi->interface->SLAVE.CTRLB = TWI_SLAVE_CMD_COMPTRANS_gc;
+			TWI_SlaveTransactionFinished(twi, TWIS_RESULT_ABORTED);
+			twi->abort = false;
+ 826:	18 8e       	std	Y+24, r1	; 0x18
+ 828:	0d c0       	rjmp	.+26     	; 0x844 <TWI_SlaveReadDATA+0x82>
+		} else {
+			twi->interface->SLAVE.CTRLB = TWI_SLAVE_CMD_RESPONSE_gc;
+ 82a:	e8 81       	ld	r30, Y
+ 82c:	f9 81       	ldd	r31, Y+1	; 0x01
+ 82e:	83 e0       	ldi	r24, 0x03	; 3
+ 830:	81 87       	std	Z+9, r24	; 0x09
+ 832:	08 c0       	rjmp	.+16     	; 0x844 <TWI_SlaveReadDATA+0x82>
+	}
+	/* If buffer overflow, send NACK and wait for next START. Set
+	 * result buffer overflow.
+	 */
+	else {
+		twi->interface->SLAVE.CTRLB = TWI_SLAVE_ACKACT_bm |
+ 834:	a0 81       	ld	r26, Z
+ 836:	b1 81       	ldd	r27, Z+1	; 0x01
+ 838:	86 e0       	ldi	r24, 0x06	; 6
+ 83a:	19 96       	adiw	r26, 0x09	; 9
+ 83c:	8c 93       	st	X, r24
+ *  \param twi    The TWI_Slave_t struct instance.
+ *  \param result The result of the transaction.
+ */
+void TWI_SlaveTransactionFinished(TWI_Slave_t *twi, uint8_t result)
+{
+	twi->result = result;
+ 83e:	82 e0       	ldi	r24, 0x02	; 2
+ 840:	87 8b       	std	Z+23, r24	; 0x17
+	twi->status = TWIS_STATUS_READY;
+ 842:	16 8a       	std	Z+22, r1	; 0x16
+
+	}
+	
+	
+	
+}
+ 844:	df 91       	pop	r29
+ 846:	cf 91       	pop	r28
+ 848:	08 95       	ret
+
+0000084a <TWI_SlaveWriteDATA>:
+ *  Handles TWI slave write transactions and responses.
+ *
+ *  \param twi The TWI_Slave_t struct instance.
+ */
+void TWI_SlaveWriteDATA(TWI_Slave_t *twi)
+{
+ 84a:	fc 01       	movw	r30, r24
+	/* If NACK, slave write transaction finished. */
+	if ((twi->bytesSent > 0) && (twi->interface->SLAVE.STATUS &
+ 84c:	85 89       	ldd	r24, Z+21	; 0x15
+ 84e:	88 23       	and	r24, r24
+ 850:	71 f0       	breq	.+28     	; 0x86e <TWI_SlaveWriteDATA+0x24>
+ 852:	a0 81       	ld	r26, Z
+ 854:	b1 81       	ldd	r27, Z+1	; 0x01
+ 856:	1a 96       	adiw	r26, 0x0a	; 10
+ 858:	8c 91       	ld	r24, X
+ 85a:	1a 97       	sbiw	r26, 0x0a	; 10
+ 85c:	84 ff       	sbrs	r24, 4
+ 85e:	07 c0       	rjmp	.+14     	; 0x86e <TWI_SlaveWriteDATA+0x24>
+	                             TWI_SLAVE_RXACK_bm)) {
+
+		twi->interface->SLAVE.CTRLB = TWI_SLAVE_CMD_COMPTRANS_gc;
+ 860:	82 e0       	ldi	r24, 0x02	; 2
+ 862:	19 96       	adiw	r26, 0x09	; 9
+ 864:	8c 93       	st	X, r24
+ *  \param twi    The TWI_Slave_t struct instance.
+ *  \param result The result of the transaction.
+ */
+void TWI_SlaveTransactionFinished(TWI_Slave_t *twi, uint8_t result)
+{
+	twi->result = result;
+ 866:	81 e0       	ldi	r24, 0x01	; 1
+ 868:	87 8b       	std	Z+23, r24	; 0x17
+	twi->status = TWIS_STATUS_READY;
+ 86a:	16 8a       	std	Z+22, r1	; 0x16
+ 86c:	08 95       	ret
+		twi->interface->SLAVE.CTRLB = TWI_SLAVE_CMD_COMPTRANS_gc;
+		TWI_SlaveTransactionFinished(twi, TWIS_RESULT_OK);
+	}
+	/* If ACK, master expects more data. */
+	else {
+		if (twi->bytesSent < TWIS_SEND_BUFFER_SIZE) {
+ 86e:	85 89       	ldd	r24, Z+21	; 0x15
+ 870:	88 30       	cpi	r24, 0x08	; 8
+ 872:	98 f4       	brcc	.+38     	; 0x89a <TWI_SlaveWriteDATA+0x50>
+			uint8_t data = twi->sendData[twi->bytesSent];
+ 874:	85 89       	ldd	r24, Z+21	; 0x15
+ 876:	df 01       	movw	r26, r30
+ 878:	a8 0f       	add	r26, r24
+ 87a:	b1 1d       	adc	r27, r1
+ 87c:	1c 96       	adiw	r26, 0x0c	; 12
+ 87e:	8c 91       	ld	r24, X
+			twi->interface->SLAVE.DATA = data;
+ 880:	a0 81       	ld	r26, Z
+ 882:	b1 81       	ldd	r27, Z+1	; 0x01
+ 884:	1c 96       	adiw	r26, 0x0c	; 12
+ 886:	8c 93       	st	X, r24
+			twi->bytesSent++;
+ 888:	85 89       	ldd	r24, Z+21	; 0x15
+ 88a:	8f 5f       	subi	r24, 0xFF	; 255
+ 88c:	85 8b       	std	Z+21, r24	; 0x15
+
+			/* Send data, wait for data interrupt. */
+			twi->interface->SLAVE.CTRLB = TWI_SLAVE_CMD_RESPONSE_gc;
+ 88e:	01 90       	ld	r0, Z+
+ 890:	f0 81       	ld	r31, Z
+ 892:	e0 2d       	mov	r30, r0
+ 894:	83 e0       	ldi	r24, 0x03	; 3
+ 896:	81 87       	std	Z+9, r24	; 0x09
+ 898:	08 95       	ret
+		}
+		/* If buffer overflow. */
+		else {
+			twi->interface->SLAVE.CTRLB = TWI_SLAVE_CMD_COMPTRANS_gc;
+ 89a:	a0 81       	ld	r26, Z
+ 89c:	b1 81       	ldd	r27, Z+1	; 0x01
+ 89e:	82 e0       	ldi	r24, 0x02	; 2
+ 8a0:	19 96       	adiw	r26, 0x09	; 9
+ 8a2:	8c 93       	st	X, r24
+ *  \param twi    The TWI_Slave_t struct instance.
+ *  \param result The result of the transaction.
+ */
+void TWI_SlaveTransactionFinished(TWI_Slave_t *twi, uint8_t result)
+{
+	twi->result = result;
+ 8a4:	87 8b       	std	Z+23, r24	; 0x17
+	twi->status = TWIS_STATUS_READY;
+ 8a6:	16 8a       	std	Z+22, r1	; 0x16
+ 8a8:	08 95       	ret
+
+000008aa <TWI_SlaveData>:
+ *
+ *  \param twi The TWI_Slave_t struct instance.
+ */
+void TWI_SlaveData(TWI_Slave_t *twi)
+ {
+	if (twi->interface->SLAVE.STATUS & TWI_SLAVE_DIR_bm) {
+ 8aa:	dc 01       	movw	r26, r24
+ 8ac:	ed 91       	ld	r30, X+
+ 8ae:	fc 91       	ld	r31, X
+ 8b0:	22 85       	ldd	r18, Z+10	; 0x0a
+ 8b2:	21 ff       	sbrs	r18, 1
+ 8b4:	03 c0       	rjmp	.+6      	; 0x8bc <TWI_SlaveData+0x12>
+		TWI_SlaveWriteDATA(twi);
+ 8b6:	0e 94 25 04 	call	0x84a	; 0x84a <TWI_SlaveWriteDATA>
+ 8ba:	08 95       	ret
+	
+	} else {	
+	TWI_SlaveReadDATA(twi);
+ 8bc:	0e 94 e1 03 	call	0x7c2	; 0x7c2 <TWI_SlaveReadDATA>
+ 8c0:	08 95       	ret
+
+000008c2 <TWI_SlaveInterruptHandler>:
+ *  data transmission, bus error and data collision.
+ *
+ *  \param twi The TWI_Slave_t struct instance.
+ */
+void TWI_SlaveInterruptHandler(TWI_Slave_t *twi)
+{
+ 8c2:	fc 01       	movw	r30, r24
+	uint8_t currentStatus = twi->interface->SLAVE.STATUS;
+ 8c4:	a0 81       	ld	r26, Z
+ 8c6:	b1 81       	ldd	r27, Z+1	; 0x01
+ 8c8:	1a 96       	adiw	r26, 0x0a	; 10
+ 8ca:	8c 91       	ld	r24, X
+
+	/* If bus error. */
+	if (currentStatus & TWI_SLAVE_BUSERR_bm) {
+ 8cc:	82 ff       	sbrs	r24, 2
+ 8ce:	06 c0       	rjmp	.+12     	; 0x8dc <TWI_SlaveInterruptHandler+0x1a>
+		twi->bytesReceived = 0;
+ 8d0:	14 8a       	std	Z+20, r1	; 0x14
+		twi->bytesSent = 0;
+ 8d2:	15 8a       	std	Z+21, r1	; 0x15
+		twi->result = TWIS_RESULT_BUS_ERROR;
+ 8d4:	84 e0       	ldi	r24, 0x04	; 4
+ 8d6:	87 8b       	std	Z+23, r24	; 0x17
+		twi->status = TWIS_STATUS_READY;
+ 8d8:	16 8a       	std	Z+22, r1	; 0x16
+ 8da:	08 95       	ret
+	}
+
+	/* If transmit collision. */
+	else if (currentStatus & TWI_SLAVE_COLL_bm) {
+ 8dc:	83 ff       	sbrs	r24, 3
+ 8de:	06 c0       	rjmp	.+12     	; 0x8ec <TWI_SlaveInterruptHandler+0x2a>
+		twi->bytesReceived = 0;
+ 8e0:	14 8a       	std	Z+20, r1	; 0x14
+		twi->bytesSent = 0;
+ 8e2:	15 8a       	std	Z+21, r1	; 0x15
+		twi->result = TWIS_RESULT_TRANSMIT_COLLISION;
+ 8e4:	83 e0       	ldi	r24, 0x03	; 3
+ 8e6:	87 8b       	std	Z+23, r24	; 0x17
+		twi->status = TWIS_STATUS_READY;
+ 8e8:	16 8a       	std	Z+22, r1	; 0x16
+ 8ea:	08 95       	ret
+ 8ec:	28 2f       	mov	r18, r24
+ 8ee:	20 74       	andi	r18, 0x40	; 64
+	}
+
+	/* If address match. */
+	else if ((currentStatus & TWI_SLAVE_APIF_bm) &&
+ 8f0:	98 2f       	mov	r25, r24
+ 8f2:	91 74       	andi	r25, 0x41	; 65
+ 8f4:	91 34       	cpi	r25, 0x41	; 65
+ 8f6:	21 f4       	brne	.+8      	; 0x900 <TWI_SlaveInterruptHandler+0x3e>
+	        (currentStatus & TWI_SLAVE_AP_bm)) {
+
+		TWI_SlaveAddressMatchHandler(twi);
+ 8f8:	cf 01       	movw	r24, r30
+ 8fa:	0e 94 ab 03 	call	0x756	; 0x756 <TWI_SlaveAddressMatchHandler>
+ 8fe:	08 95       	ret
+	}
+
+	/* If stop (only enabled through slave read transaction). */
+	else if (currentStatus & TWI_SLAVE_APIF_bm) {
+ 900:	22 23       	and	r18, r18
+ 902:	21 f0       	breq	.+8      	; 0x90c <TWI_SlaveInterruptHandler+0x4a>
+		TWI_SlaveStopHandler(twi);
+ 904:	cf 01       	movw	r24, r30
+ 906:	0e 94 cc 03 	call	0x798	; 0x798 <TWI_SlaveStopHandler>
+ 90a:	08 95       	ret
+	}
+
+	/* If data interrupt. */
+	else if (currentStatus & TWI_SLAVE_DIF_bm) {
+ 90c:	88 23       	and	r24, r24
+ 90e:	24 f4       	brge	.+8      	; 0x918 <TWI_SlaveInterruptHandler+0x56>
+		//TWI_SlaveDataHandler(twi);          //COMMENTED BY ME
+		TWI_SlaveData(twi);                  //ADDEDE BY ME       
+ 910:	cf 01       	movw	r24, r30
+ 912:	0e 94 55 04 	call	0x8aa	; 0x8aa <TWI_SlaveData>
+ 916:	08 95       	ret
+ *  \param twi    The TWI_Slave_t struct instance.
+ *  \param result The result of the transaction.
+ */
+void TWI_SlaveTransactionFinished(TWI_Slave_t *twi, uint8_t result)
+{
+	twi->result = result;
+ 918:	85 e0       	ldi	r24, 0x05	; 5
+ 91a:	87 8b       	std	Z+23, r24	; 0x17
+	twi->status = TWIS_STATUS_READY;
+ 91c:	16 8a       	std	Z+22, r1	; 0x16
+ 91e:	08 95       	ret
+
+00000920 <USART_InterruptDriver_Initialize>:
+	if(usart->CTRLB & USART_RXB8_bm) {
+		return(0x0100 | usart->DATA);
+	}else {
+		return(usart->DATA);
+	}
+}
+ 920:	fc 01       	movw	r30, r24
+ 922:	60 83       	st	Z, r22
+ 924:	71 83       	std	Z+1, r23	; 0x01
+ 926:	42 83       	std	Z+2, r20	; 0x02
+ 928:	14 86       	std	Z+12, r1	; 0x0c
+ 92a:	13 86       	std	Z+11, r1	; 0x0b
+ 92c:	16 86       	std	Z+14, r1	; 0x0e
+ 92e:	15 86       	std	Z+13, r1	; 0x0d
+ 930:	08 95       	ret
+
+00000932 <USART_TXBuffer_FreeSpace>:
+ 932:	fc 01       	movw	r30, r24
+ 934:	95 85       	ldd	r25, Z+13	; 0x0d
+ 936:	26 85       	ldd	r18, Z+14	; 0x0e
+ 938:	9f 5f       	subi	r25, 0xFF	; 255
+ 93a:	93 70       	andi	r25, 0x03	; 3
+ 93c:	81 e0       	ldi	r24, 0x01	; 1
+ 93e:	92 13       	cpse	r25, r18
+ 940:	01 c0       	rjmp	.+2      	; 0x944 <USART_TXBuffer_FreeSpace+0x12>
+ 942:	80 e0       	ldi	r24, 0x00	; 0
+ 944:	08 95       	ret
+
+00000946 <USART_RXBufferData_Available>:
+ 946:	fc 01       	movw	r30, r24
+ 948:	23 85       	ldd	r18, Z+11	; 0x0b
+ 94a:	94 85       	ldd	r25, Z+12	; 0x0c
+ 94c:	81 e0       	ldi	r24, 0x01	; 1
+ 94e:	29 13       	cpse	r18, r25
+ 950:	01 c0       	rjmp	.+2      	; 0x954 <USART_RXBufferData_Available+0xe>
+ 952:	80 e0       	ldi	r24, 0x00	; 0
+ 954:	08 95       	ret
+
+00000956 <USART_RXBuffer_GetByte>:
+ 956:	fc 01       	movw	r30, r24
+ 958:	84 85       	ldd	r24, Z+12	; 0x0c
+ 95a:	df 01       	movw	r26, r30
+ 95c:	a8 0f       	add	r26, r24
+ 95e:	b1 1d       	adc	r27, r1
+ 960:	13 96       	adiw	r26, 0x03	; 3
+ 962:	8c 91       	ld	r24, X
+ 964:	94 85       	ldd	r25, Z+12	; 0x0c
+ 966:	9f 5f       	subi	r25, 0xFF	; 255
+ 968:	93 70       	andi	r25, 0x03	; 3
+ 96a:	94 87       	std	Z+12, r25	; 0x0c
+ 96c:	08 95       	ret
+
+0000096e <USART_RXComplete>:
+ 96e:	fc 01       	movw	r30, r24
+ 970:	93 85       	ldd	r25, Z+11	; 0x0b
+ 972:	9f 5f       	subi	r25, 0xFF	; 255
+ 974:	93 70       	andi	r25, 0x03	; 3
+ 976:	84 85       	ldd	r24, Z+12	; 0x0c
+ 978:	a0 81       	ld	r26, Z
+ 97a:	b1 81       	ldd	r27, Z+1	; 0x01
+ 97c:	2c 91       	ld	r18, X
+ 97e:	98 17       	cp	r25, r24
+ 980:	49 f0       	breq	.+18     	; 0x994 <USART_RXComplete+0x26>
+ 982:	83 85       	ldd	r24, Z+11	; 0x0b
+ 984:	df 01       	movw	r26, r30
+ 986:	a8 0f       	add	r26, r24
+ 988:	b1 1d       	adc	r27, r1
+ 98a:	13 96       	adiw	r26, 0x03	; 3
+ 98c:	2c 93       	st	X, r18
+ 98e:	93 87       	std	Z+11, r25	; 0x0b
+ 990:	81 e0       	ldi	r24, 0x01	; 1
+ 992:	08 95       	ret
+ 994:	80 e0       	ldi	r24, 0x00	; 0
+ 996:	08 95       	ret
+
+00000998 <USART_DataRegEmpty>:
+ 998:	fc 01       	movw	r30, r24
+ 99a:	96 85       	ldd	r25, Z+14	; 0x0e
+ 99c:	85 85       	ldd	r24, Z+13	; 0x0d
+ 99e:	98 13       	cpse	r25, r24
+ 9a0:	07 c0       	rjmp	.+14     	; 0x9b0 <USART_DataRegEmpty+0x18>
+ 9a2:	01 90       	ld	r0, Z+
+ 9a4:	f0 81       	ld	r31, Z
+ 9a6:	e0 2d       	mov	r30, r0
+ 9a8:	83 81       	ldd	r24, Z+3	; 0x03
+ 9aa:	8c 7f       	andi	r24, 0xFC	; 252
+ 9ac:	83 83       	std	Z+3, r24	; 0x03
+ 9ae:	08 95       	ret
+ 9b0:	86 85       	ldd	r24, Z+14	; 0x0e
+ 9b2:	df 01       	movw	r26, r30
+ 9b4:	a8 0f       	add	r26, r24
+ 9b6:	b1 1d       	adc	r27, r1
+ 9b8:	17 96       	adiw	r26, 0x07	; 7
+ 9ba:	8c 91       	ld	r24, X
+ 9bc:	a0 81       	ld	r26, Z
+ 9be:	b1 81       	ldd	r27, Z+1	; 0x01
+ 9c0:	8c 93       	st	X, r24
+ 9c2:	86 85       	ldd	r24, Z+14	; 0x0e
+ 9c4:	8f 5f       	subi	r24, 0xFF	; 255
+ 9c6:	83 70       	andi	r24, 0x03	; 3
+ 9c8:	86 87       	std	Z+14, r24	; 0x0e
+ 9ca:	08 95       	ret
+
+000009cc <UART_TXBuffer_PutByte>:
+/* I add some function similar to above
+
+*/
+
+void UART_TXBuffer_PutByte(USART_data_t * usart_data, uint8_t data)
+{
+ 9cc:	1f 93       	push	r17
+ 9ce:	cf 93       	push	r28
+ 9d0:	df 93       	push	r29
+ 9d2:	ec 01       	movw	r28, r24
+ 9d4:	16 2f       	mov	r17, r22
+	uint8_t tempTX_Head;
+	bool TXBuffer_FreeSpace;
+	USART_Buffer_t * TXbufPtr;
+
+	TXbufPtr = &usart_data->buffer;
+	TXBuffer_FreeSpace = USART_TXBuffer_FreeSpace(usart_data);
+ 9d6:	0e 94 99 04 	call	0x932	; 0x932 <USART_TXBuffer_FreeSpace>
+
+
+	if(TXBuffer_FreeSpace)
+ 9da:	88 23       	and	r24, r24
+ 9dc:	79 f0       	breq	.+30     	; 0x9fc <UART_TXBuffer_PutByte+0x30>
+	{
+		tempTX_Head = TXbufPtr->TX_Head;
+ 9de:	8d 85       	ldd	r24, Y+13	; 0x0d
+		TXbufPtr->TX[tempTX_Head]= data;
+ 9e0:	fe 01       	movw	r30, r28
+ 9e2:	e8 0f       	add	r30, r24
+ 9e4:	f1 1d       	adc	r31, r1
+ 9e6:	17 83       	std	Z+7, r17	; 0x07
+		/* Advance buffer head. */
+		TXbufPtr->TX_Head = (tempTX_Head + 1) & USART_TX_BUFFER_MASK;
+ 9e8:	8f 5f       	subi	r24, 0xFF	; 255
+ 9ea:	83 70       	andi	r24, 0x03	; 3
+ 9ec:	8d 87       	std	Y+13, r24	; 0x0d
+
+		/* Enable DRE interrupt. */
+		tempCTRLA = usart_data->usart->CTRLA;
+ 9ee:	e8 81       	ld	r30, Y
+ 9f0:	f9 81       	ldd	r31, Y+1	; 0x01
+ 9f2:	83 81       	ldd	r24, Z+3	; 0x03
+		tempCTRLA = (tempCTRLA & ~USART_DREINTLVL_gm) | usart_data->dreIntLevel;
+ 9f4:	8c 7f       	andi	r24, 0xFC	; 252
+ 9f6:	9a 81       	ldd	r25, Y+2	; 0x02
+ 9f8:	89 2b       	or	r24, r25
+		usart_data->usart->CTRLA = tempCTRLA;
+ 9fa:	83 83       	std	Z+3, r24	; 0x03
+	}
+	//return TXBuffer_FreeSpace;  //Nothing to be return
+}
+ 9fc:	df 91       	pop	r29
+ 9fe:	cf 91       	pop	r28
+ a00:	1f 91       	pop	r17
+ a02:	08 95       	ret
+
+00000a04 <_exit>:
+ a04:	f8 94       	cli
+
+00000a06 <__stop_program>:
+ a06:	ff cf       	rjmp	.-2      	; 0xa06 <__stop_program>
